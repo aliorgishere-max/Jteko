@@ -1,4 +1,9 @@
 <?php
+
+// لاگ کردن درخواست‌های ورودی تلگرام
+$update_raw = file_get_contents('php://input');
+file_put_contents('tele_log.txt', $update_raw . PHP_EOL, FILE_APPEND);
+
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
