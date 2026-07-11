@@ -1,9 +1,10 @@
 <?php
-error_reporting(0);
-ini_set('display_errors', 0);
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
 
-define('API_KEY', '8642722220:AAEnzJ5yZsJf7jkFEiVAA6lw8ufa43Zuh6g');
-define('ADMIN_ID', 7664331942); // ادمین اصلی (غیرقابل حذف)
+
+define('API_KEY', '8802789901:AAG6JKnANWXy-bRVRxIWf7xBqYET8HxZOIU');
+define('ADMIN_ID', 8447611962); // ادمین اصلی (غیرقابل حذف)
 
 function bot($method, $datas = []) {
     $url = "https://api.telegram.org/bot".API_KEY."/".$method;
